@@ -13,8 +13,7 @@ export function App() {
 
   const res2 = () => {
     getImage({ prompt: 'A chinese girl'}).then(item => {
-      content2 = item[0]
-      setImageRes(item[0])
+      setImageRes(item?.url || '')
     })
     // console.log('content2', content2)
     return
