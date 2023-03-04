@@ -26,7 +26,7 @@ export async function getImage ({ prompt, n = 1, size = '1024x1024' }: Params) {
 
 export async function getImageFunc ({ prompt, n = 1, size = '1024x1024' }: Params) {
   const configuration = new Configuration({
-    apiKey: String(import.meta.env.PRIVATE_KEY),
+    apiKey: String(import.meta.env.VITE_PRIVATE_KEY),
   });
   console.log(import.meta.env.PRIVATE_KEY);
   const openai = new OpenAIApi(configuration);
