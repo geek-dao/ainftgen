@@ -16,7 +16,7 @@ export async function getImage ({ prompt, n = 1, size = '1024x1024' }: Params) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + String('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')
+      'Authorization': 'Bearer ' + String('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')
     },
     body: JSON.stringify(params)
   })
@@ -26,7 +26,7 @@ export async function getImage ({ prompt, n = 1, size = '1024x1024' }: Params) {
 
 export async function getImageFunc ({ prompt, n = 1, size = '1024x1024' }: Params) {
   const configuration = new Configuration({
-    apiKey: String('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'),
+    apiKey: String('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'),
   });
   const openai = new OpenAIApi(configuration);
   const params = {
